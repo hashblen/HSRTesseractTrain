@@ -1,6 +1,6 @@
 # export TESSDATA_PREFIX="$(pwd)/tessdata"
 # rm -rf tesstrain
-# git clone https://github.com/tesseract-ocr/tesstrain.git
+git clone https://github.com/tesseract-ocr/tesstrain.git
 cd tesstrain
 make tesseract-langdata
 cp -r "../images/" "data/hsr-ground-truth"
