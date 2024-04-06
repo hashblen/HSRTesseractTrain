@@ -7,7 +7,7 @@ pytesseract.pytesseract.tesseract_cmd = "assets/tesseract/tesseract.exe"
 img_dir = "images"
 json_name = 'achievement_processed_data.json'
 
-config = f'--psm 7 -l hsr'
+config = f'--psm 7 -l hsr3'
 
 cnt_exact = 0
 cnt_not = 0

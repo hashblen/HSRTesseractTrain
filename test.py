@@ -7,12 +7,12 @@ pytesseract.pytesseract.tesseract_cmd = "assets/tesseract/tesseract.exe"
 img_dir = "images"
 json_name = 'achievement_processed_data.json'
 
-config = f'--psm 7 -l DIN-Alternate'
+config = f'--psm 7 -l hsr3'
 
 import cv2
 import numpy as np
 
-img = Image.open("130728501911.png")
+img = Image.open("4k.png")
 d = pytesseract.image_to_boxes(img, config=config+" -c tessedit_create_boxfile=1", output_type=pytesseract.Output.DICT)
 
 frame = np.array(img)
